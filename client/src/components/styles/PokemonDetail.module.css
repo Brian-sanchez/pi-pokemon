@@ -1,0 +1,283 @@
+.bigContainer {
+  background-color: #ee1d2f;
+}
+
+.goBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.goBack p {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.goBack p:hover {
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.card {
+  width: 50vw;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  margin: 100px 35px 50px 330px; /* Top, Right, Bottom, Left */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.cardGradient {
+  background-color: #9e9f85;
+  width: 100%;
+  /* border-radius: 12px 12px 0px 0px; */ /* Top Left, Top Right, Bottom Right, Bottom Left*/
+  border-radius: 0px 0px 12px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 25px;
+  object-fit: cover;
+  flex-grow: auto;
+}
+
+.card:hover {
+  box-shadow: -2px 5px 21px 4px #292929;
+}
+
+.card button {
+  border-radius: 12px 12px 0px 0;
+  width: 6vw;
+  height: 4vh;
+  border: 1px solid grey;
+  color: black;
+}
+
+.card img {
+  max-width: 230px;
+  margin-right: 100px;
+}
+
+.stats {
+  margin-left: -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statsCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.statsCard h4 {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.pokemonId {
+  margin-left: 10px;
+}
+
+.empty {
+  min-height: 9vh;
+  margin-top: 5px;
+}
+
+.types {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+  font-size: 50%;
+  text-transform: uppercase;
+}
+
+.types p {
+  margin: 30px 10px;
+  padding: 6px;
+  color: #000;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.types p[value=grass] {
+  background-color: #5ebd5b ;
+}
+
+.types p[value=fire] {
+  background: #e48621 ;
+}
+
+.types p[value=water] {
+  background-color: #096fc8  ;
+}
+.types p[value=ground] {
+  background-color: #c7b78a  ;
+}
+
+.types p[value=electric] {
+  background-color: #f0d84a  ;
+}
+
+.types p[value=flying] {
+  background-color: #899beb  ;
+}
+
+.types p[value=poison] {
+  background-color: #7c3c8b  ;
+}
+
+.types p[value=normal] {
+  background-color: #abad93  ;
+}
+
+.types p[value=psychic] {
+  background-color: #f77676  ;
+}
+
+.types p[value=dragon] {
+  background-color: #7a42d3  ;
+}
+
+.types p[value=ice] {
+  background-color: #5f9cd8  ;
+}
+
+.types p[value=rock] {
+  background-color: #978a64  ;
+}
+
+.types p[value=bug] {
+  background-color: #97be2e  ;
+}
+
+.types p[value=ghost] {
+  background-color: #514199  ;
+}
+
+.types p[value=fighting] {
+  background: #eb2525  ;
+}
+
+.types p[value=fairy] {
+  background: #ef97e6  ;
+}
+
+.types p[value=dark] {
+  background: #363636  ;
+}
+
+.types p[value=steel] {
+  background: #838a91  ;
+}
+
+.types p[value=shadow] {
+  background: #2b0179  ;
+}
+
+.upper {
+  display: flex;
+  align-items: center;
+}
+
+.pokemonImg {
+  padding-left: 50px;
+}
+
+/* LOADING */
+
+.loadingContainer {
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee1d2f;
+  padding-bottom: 190px;
+}
+
+.loadingContainer img {
+  margin-top: 100px;
+  max-height: 40vh;
+}
+
+/* CSS ANIMATIONS */
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

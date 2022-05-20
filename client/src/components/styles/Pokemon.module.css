@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
+
+.card {
+  width: 18vw;
+  height: 40vh;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  margin: 40px 35px 110px 100px; /* Top, Right, Bottom, Left */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cardGradient {
+  background-color: #9e9f85;
+  height: 60%;
+  width: 100%;
+  /* border-radius: 12px 12px 0px 0px; */ /* Top Left, Top Right, Bottom Right, Bottom Left*/
+  border-radius: 0px 0px 12px 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 25px;
+  object-fit: cover;
+  flex-grow: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card:hover {
+  /*transform: scale(1.1);*/
+  box-shadow: -2px 5px 21px 4px #adad9c;
+  cursor: pointer;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.card:hover .cardGradient {
+  background-color: #a4a594;
+  background-image: linear-gradient(135deg, #a4a594 0%, #919283 100%);
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+  font-size: 50%;
+  text-transform: uppercase;
+}
+
+.types p {
+  margin: 10px 10px;
+  padding: 6px;
+  padding: 6px 10px;
+  color: rgb(29, 29, 29);
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
+}
+
+.types p[value=grass] {
+  background-color: #5ebd5b ;
+}
+
+.types p[value=fire] {
+  background: #e48621 ;
+}
+
+.types p[value=water] {
+  background-color: #096fc8  ;
+}
+.types p[value=ground] {
+  background-color: #c7b78a  ;
+}
+
+.types p[value=electric] {
+  background-color: #f0d84a  ;
+}
+
+.types p[value=flying] {
+  background-color: #899beb  ;
+}
+
+.types p[value=poison] {
+  background-color: #7c3c8b  ;
+}
+
+.types p[value=normal] {
+  background-color: #abad93  ;
+}
+
+.types p[value=psychic] {
+  background-color: #f77676  ;
+}
+
+.types p[value=dragon] {
+  background-color: #7a42d3  ;
+}
+
+.types p[value=ice] {
+  background-color: #5f9cd8  ;
+}
+
+.types p[value=rock] {
+  background-color: #978a64  ;
+}
+
+.types p[value=bug] {
+  background-color: #97be2e  ;
+}
+
+.types p[value=ghost] {
+  background-color: #514199  ;
+}
+
+.types p[value=fighting] {
+  background: #eb2525  ;
+}
+
+.types p[value=fairy] {
+  background: #ef97e6  ;
+}
+
+.types p[value=dark] {
+  background: #363636  ;
+}
+
+.types p[value=steel] {
+  background: #838a91  ;
+}
+
+.types p[value=shadow] {
+  background: #2b0179  ;
+}
+
+.card button {
+  border-radius: 12px 12px 0px 0;
+  width: 6vw;
+  height: 4vh;
+  border: 1px solid grey;
+  color: black;
+}
+
+/* PNG */
+.card img {
+  max-width: 237px;
+  max-height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cardStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+}
+
+.pokemonName {
+  margin-top: 3px;
+}
+
+.containerIcon {
+  margin: 2px 40px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.containerIcon p {
+  font-weight: 700;
+}
+
+.title {
+  margin: 500px 0px;
+}
+
+.icon {
+  font-size: 35px;
+  color: #34d399;
+}
+
+/* CSS ANIMATIONS */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Card Gradient */
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

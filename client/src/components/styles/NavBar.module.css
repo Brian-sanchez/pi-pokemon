@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+.bigContainer {
+  width: 100vw;
+  background-color: #ee1d2f;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 30px;
+  margin-left: -50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.searchBar {
+  position: absolute;
+  margin-top: -140px;
+  margin-left: 140px;
+}
+
+.showFilter {
+  width: 6vw;
+  height: 4vh;
+  border-radius: 12px;
+  border: none;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.showFilter:hover {
+  background-color: #f2f2f2;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 12px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.filters {
+  margin: 0 18px;
+}
+
+.filters p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filters p:hover {
+  color: #000;
+}
+
+.filters select {
+  text-align: center;
+  margin: 10px 10px 0px;
+  padding: 3px;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  border-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 8vw;
+  height: 4vh;
+}
+
+.filters select:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.filters select:active {
+  text-transform: capitalize;
+}
+
+.filters select:focus {
+  outline: none;
+  outline: 2px solid #4585c1;
+}
+
+.filters select:active {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+}
+
+.filters option {
+  text-transform: capitalize;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding-top: 44px;
+}
+
+.buttonClear {
+  margin: 0 20px;
+  width: 8vw;
+  height: 4vh;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+
+.buttons .buttonClear:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.buttons p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.clearFilters {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.clearFilters:hover {
+  cursor: pointer;
+  color: #8aadeb;
+}

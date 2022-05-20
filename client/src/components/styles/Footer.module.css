@@ -1,0 +1,15 @@
+.footerBackground {
+  background-image: url(../assets/images/footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer {
+  height: 15vh;
+}
+
+.footer p {
+  justify-content: center;
+  text-align: center;
+  padding-top: 38px;
+}
